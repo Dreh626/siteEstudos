@@ -1,0 +1,118 @@
+/* Seta as margins e os padding do document  para 0 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Inserindo imagem como background, não permitindo a repetição, deixando ela em posição fixa e cobrindo a tela exibida */
+body {
+  background-image: url(https://fastly.picsum.photos/id/48/5000/3333.jpg?hmac=y3_1VDNbhii0vM_FN6wxMlvK27vFefflbUSH06z98so);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Definindo a fonte para o site */
+h1,
+h2,
+h3,
+p,
+span {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Utilizando flex para alinhamento do menu */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(197, 192, 192, 0.7);
+}
+
+/* Estilizando logo do menu */
+.header .logo {
+  max-width: 150px;
+}
+
+.header .logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+/* Estilizando elementos do menu */
+.header .nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header .nav p {
+  padding: 15px 0;
+}
+
+.header .nav p a {
+  text-decoration: none;
+  color: #7c7c7c;
+}
+
+.header .nav p a:hover {
+  color: #ff7020;
+}
+
+/* Estilizando a div main do site */
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* Definindo o container de div com informaçoes */
+.main .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Alinhamento das divs dentro da pagina */
+.main .container .box_right {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .container .box_right .img {
+  width: 500px;
+}
+
+.main .container .box_right .img img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.main .container .box_left {
+  display: flex;
+  gap: 20px;
+  flex-direction: row-reverse;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .container .box_left .img {
+  width: 500px;
+}
+
+.main .container .box_left .img img {
+  width: 100%;
+  border-radius: 25px;
+}
